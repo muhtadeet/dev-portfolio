@@ -1,12 +1,13 @@
-import NavMenu from "./NavMenu";
 import { Link } from "@nextui-org/react";
 import { Avatar } from "@material-tailwind/react";
 
 export default function Home() {
   return (
     <>
-      <NavMenu />
-      <div className="flex flex-col lg:grid lg:grid-cols-2 justify-center m-5">
+      <div
+        id="home"
+        className="flex flex-col lg:grid lg:grid-cols-2 mt-14 sm:mt-24 md:mt-12 justify-center m-5"
+      >
         <div className="lg:hidden flex lg:justify-end justify-center lg:mr-96 lg:pr-20 lg:mt-10 ">
           <img
             className="border-solid border-black border-3 rounded-[50%] w-[180px] h-[250px]"
@@ -14,11 +15,11 @@ export default function Home() {
           />
         </div>
         <div className="lg:mt-24">
-          <p className="font-lato font-bold flex justify-center lg:justify-center lg:ml-96 lg:pl-24 lg:mr-5 text-3xl lg:text-7xl ml-5 mt-5 text-blue-gray-800">
-            Front-End Developer - React
+          <p className="font-lato font-bold flex justify-center lg:justify-center lg:ml-96 lg:pl-24 lg:mr-5 text-3xl lg:text-7xl ml-5 mt-10 text-blue-gray-800">
+            Front-End Developer - React.js 👋🏼
           </p>
           <p className="font-lato flex justify-center lg:justify-center lg:ml-96 lg:pl-24 text-md lg:text-2xl text-blue-gray-700 m-5">
-            Hey there! I&apos;m Muhtadee Taron.&nbsp;A passionate Front-end React
+            Hey there! I&apos;m Muhtadee Taron,&nbsp;a passionate Front-End
             Developer based in Dhaka, Bangladesh. 📍
           </p>
         </div>
@@ -65,40 +66,40 @@ export default function Home() {
               <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
             </svg>
           </Link>
-        </div>        
+        </div>
       </div>
       <div className="flex justify-center md:justify-center m-5 mt-20 gap-4 md:gap-10">
-          <Avatar
-            size="md"
-            alt="avatar"
-            src="https://img.icons8.com/?size=256&id=20909&format=png"
-            className="shadow-xl transition ease-in-out hover:animate-bounce p-2 shadow-black-900/20 border border-blue-gray-50"
-          />
-          <Avatar
-            size="md"
-            alt="avatar"
-            src="https://img.icons8.com/?size=256&id=21278&format=png"
-            className="shadow-xl transition ease-in-out hover:animate-bounce p-2 shadow-black-900/20 border border-blue-gray-50"
-          />
-          <Avatar
-            size="md"
-            alt="avatar"
-            src="https://img.icons8.com/?size=256&id=108784&format=png"
-            className="shadow-xl transition ease-in-out hover:animate-bounce p-2 shadow-black-900/20 border border-blue-gray-50"
-          />
-          <Avatar
-            size="md"
-            alt="avatar"
-            src="https://img.icons8.com/?size=256&id=123603&format=png"
-            className="shadow-xl transition ease-in-out hover:animate-bounce p-2 shadow-black-900/20 border border-blue-gray-50"
-          />
-          <Avatar
-            size="md"
-            alt="avatar"
-            src="https://img.icons8.com/?size=256&id=x7XMNGh2vdqA&format=png"
-            className="shadow-xl transition ease-in-out hover:animate-bounce p-2 shadow-black-900/20 border border-blue-gray-50"
-          />
-        </div>
+        <Avatar
+          size="md"
+          alt="avatar"
+          src="https://img.icons8.com/?size=256&id=20909&format=png"
+          className="shadow-xl transition duration-1000 ease-in-out hover:-translate-y-5 p-2 shadow-black-900/20 border border-blue-gray-50"
+        />
+        <Avatar
+          size="md"
+          alt="avatar"
+          src="https://img.icons8.com/?size=256&id=21278&format=png"
+          className="shadow-xl transition duration-1000 ease-in-out hover:-translate-y-5 p-2 shadow-black-900/20 border border-blue-gray-50"
+        />
+        <Avatar
+          size="md"
+          alt="avatar"
+          src="https://img.icons8.com/?size=256&id=108784&format=png"
+          className="shadow-xl transition duration-1000 ease-in-out hover:-translate-y-5 p-2 shadow-black-900/20 border border-blue-gray-50"
+        />
+        <Avatar
+          size="md"
+          alt="avatar"
+          src="https://img.icons8.com/?size=256&id=123603&format=png"
+          className="shadow-xl transition duration-1000 ease-in-out hover:-translate-y-5 p-2 shadow-black-900/20 border border-blue-gray-50"
+        />
+        <Avatar
+          size="md"
+          alt="avatar"
+          src="https://img.icons8.com/?size=256&id=x7XMNGh2vdqA&format=png"
+          className="shadow-xl transition duration-1000 ease-in-out hover:-translate-y-5 p-2 shadow-black-900/20 border border-blue-gray-50"
+        />
+      </div>
     </>
   );
 }

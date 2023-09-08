@@ -1,42 +1,38 @@
 import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarMenuToggle, NavbarMenuItem, NavbarMenu,  NavbarItem, Link} from "@nextui-org/react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarMenuToggle, NavbarMenuItem, NavbarMenu,  NavbarItem} from "@nextui-org/react";
+import Logo from '../assets/Logo'
+import {Link} from 'react-scroll'
+import { animateScroll as scroll } from "react-scroll";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = [
-    "Home",
-    "About",
-    "Projects",
-    "Contact",
-  ];
-
   return (
-    <Navbar isBordered onMenuOpenChange={setIsMenuOpen}>
+    <Navbar shouldHideOnScroll isBordered onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
         <NavbarBrand>
-          <p className="font-extrabold pl-5 text-inherit">Muhtadee Taron</p>
+          <Logo/>
         </NavbarBrand>
       </NavbarContent>
         <div className="pr-5 font-ubuntu font-semibold">
       <NavbarContent className="hidden sm:flex gap-10">
         <NavbarItem>
-          <Link color="foreground" href="/home">
+          <Link className=" cursor-pointer transition ease-in-out duration-300 hover:text-light-blue-600" color="foreground" onClick={() => scroll.scrollToTop()} smooth={true} duration={700}>
             Home
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/about">
+          <Link className=" cursor-pointer transition ease-in-out duration-300 hover:text-light-blue-600" color="foreground" to="about" smooth={true} duration={700}>
             About
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="projects">
+          <Link className=" cursor-pointer transition ease-in-out duration-300 hover:text-light-blue-600" color="foreground" to="projects" smooth={true} duration={700}>
             Projects
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="contact">
+          <Link className=" cursor-pointer transition ease-in-out duration-300 hover:text-light-blue-600" color="foreground" to="contact" smooth={true} duration={700}>
             Contact
           </Link>
         </NavbarItem>
@@ -49,20 +45,45 @@ export default function App() {
           className="sm:hidden"
         />
       <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+          <NavbarMenuItem>
             <Link
-              color={
-                index === 2 ? "foreground" : index === menuItems.length - 1 ? "foreground" : "foreground"
-              }
-              className="w-full font-ubuntu font-semibold"
-              href="#"
+              className="cursor-pointer transition ease-in-out duration-300 hover:text-light-blue-600 text-blue-gray-800 w-full font-ubuntu font-semibold"
               size="lg"
+              onClick={() => scroll.scrollToTop()} smooth={true} duration={700}
             >
-              {item}
+              Home
             </Link>
           </NavbarMenuItem>
-        ))}
+          <NavbarMenuItem>
+            <Link
+              className="cursor-pointer transition ease-in-out duration-300 hover:text-light-blue-600 text-blue-gray-800 w-full font-ubuntu font-semibold"
+              to="about"
+              size="lg"
+              smooth={true} duration={700}
+            >
+              About
+            </Link>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Link
+              className="cursor-pointer transition ease-in-out duration-300 hover:text-light-blue-600 text-blue-gray-800 w-full font-ubuntu font-semibold"
+              to="projects"
+              size="lg"
+              smooth={true} duration={700}
+            >
+              Projects
+            </Link>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Link
+              className="cursor-pointer transition ease-in-out duration-300 hover:text-light-blue-600 text-blue-gray-800 w-full font-ubuntu font-semibold"
+              to="contact"
+              size="lg"
+              smooth={true} duration={700}
+            >
+              Contact
+            </Link>
+          </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>
   );
