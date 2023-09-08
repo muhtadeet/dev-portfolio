@@ -15,28 +15,28 @@ export default function App() {
     <Navbar isBordered onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
         <NavbarBrand>
-          <p className="font-bold pl-3 text-inherit">Muhtadee Taron</p>
+          <p className="font-extrabold pl-5 text-inherit">Muhtadee Taron</p>
         </NavbarBrand>
       </NavbarContent>
-        <div className="pr-3">
+        <div className="pr-5 font-ubuntu font-semibold">
       <NavbarContent className="hidden sm:flex gap-10">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="/home">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="/about">
             About
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="projects">
             Projects
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="contact">
             Contact
           </Link>
         </NavbarItem>
@@ -46,16 +46,16 @@ export default function App() {
       </div>
       <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden text-bo"
+          className="sm:hidden"
         />
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
               color={
-                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
+                index === 2 ? "foreground" : index === menuItems.length - 1 ? "foreground" : "foreground"
               }
-              className="w-full"
+              className="w-full font-ubuntu font-semibold"
               href="#"
               size="lg"
             >
