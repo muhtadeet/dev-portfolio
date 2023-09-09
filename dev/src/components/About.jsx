@@ -16,7 +16,7 @@ export default function About() {
                   className="flex justify-center items-center object-cover"
                   height={200}
                   shadow="md"
-                  src="/src/assets/pc.jpg"
+                  src="https://lh3.googleusercontent.com/pw/AIL4fc8SkyQ5imJSRt6iaRJ9cs4rtpRgPW4ewF1F8nGnPUaQ_XsLKkjvKg6qqBOkOCZ1w2aw0zyZRGcY1u2R8rqpgfSIAhKoYxsGSPveg73ZIzkEpdnAFYnakMJXWiQG2eZB_qDJIu2UO_sNpVaAyuFC0F6ouG9C0KZ7zibzDMOUgv_-L0QA-5lwS_pLJR4I3gkj2rlw_wjbhd47jhqrMgksx99WSZ23aXt8JlmW081yWIJ2yvTSOWtW6h1flq4lCXLaRIFntqEbzhEnooMlBKyYPK-20NtPT_eNR0Qcw1xBV4LeckK7tnfvWSmPQfOYS55LV4JJIr-uj2g8mpppJrzF_kDUR9rhleYgtAcsj3zNmDyOImkll0CzOXLHe_LE_OKl5ub4j_FN91K-GZnXUsUjw4r-D3_KLOx9wkymJoWFOXSKwpsYyklD03WssiU_J_UW52Qb7KS0OmXTEF3h0yUJhmjO2tBMdrfVRIb071mg018OYovV4ryChcpugg2gG7K6jtJurQid_81KkQN0T1EEiKLNur5wCJkg6yS_TJM3Qw5Hh8H438-7EtxqW1zbD1kFZdZV5rCjscZmRkiIxp7J4IypGEEboiQksUEIC2iUCQY0c8UFHhSw8qAFMtKYwHqC7yvxe4hoFN00_42Br-rUydlfUZDwDfTAmouRV9xsXEUnm2a_DR1tJT3k2i47LYTkPJeI-siZiiiX-_t1MvTgbBwVuCuBeuWfVLcl0pCdbSdP1s2xYQbmHiB0XuqAtHaP_pjYtNApcjjQYu3n0AweE5uxL6e65dR--CsUadWLmSx5PNhMYEjgSdrenmlRm0PaPOISyzU46PnXCvbMT-yFPE1Jzi7YTPm0dGmNsqEM_-AIntDvtNywznN5IQvtEJ1txGpmHydhUC7s8fN4i4qSyxRmWLl2GgRHmhPTmtpp8bHUhVUX5T1R1aXHTrYU7RU=w570-h912-s-no?authuser=0"
                   width="100%"
                 />
               </div>
