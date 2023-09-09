@@ -26,7 +26,7 @@ export default function Home() {
         <div className="hidden lg:flex lg:justify-end justify-center lg:mr-96 lg:pr-20 lg:mt-24 ">
           <img
             className="border-solid border-black border-3 rounded-[50%] w-[280px] h-[400px]"
-            src="/src/assets/taron.jpg"
+            src="https://lh3.googleusercontent.com/pw/AIL4fc_DYVtOoAxXplxa_rY2ebuWya9HKQasWI5oY4xWtQ53H6xwVoOmYJdtyO_kJON8asQ2dJnXeQUYQIIKaxNtUITCNdAf6NYxjaWicWqpnO7mABtY-ltiho3AuObtGmhICdM0SnLRgwVYMWIGE7NrpJdsF1V9-ZvtT7ONolS2_UsuciImv2stjIL05cAR54O-MBLM7m5QDFVpZpbvemF4Tf3jJ9fkksossdXWHO5pcG9ZXTZqFPLVG4rRHgQ7PemU0Hcg5ozLYoiBEYQoKGdkyK_pgVh-Ehh1cuFGbYJENkcMs54B0ZcKOlKVitz5tKhrz8Nr3V4yTLfIDylnSnceDxZMOVcACAdG7XYP4TAJWQul3QtG1g6NeGlnfHvHso0QxpBrestLyZ_xs-4h1IOhvMIjr3JU39-6sz8BxnuVzQ8F1vcFVWuDX8lboPYcwHcyXZbyYWE0PgFelq65ZeOy4AxADa-s8wwGBkAmFoPSgSXC6zvbNGnECzU-0vXVsMy59jaSFjDV9VEu1A5YtRHS_EdjsHRqPwWzD0JV2t1xoWid0fI4GkyG_L59m5ZX7FsEPYtM7gst2Ka9WfATa-PXvLYXXfaqla-sXMtC4us3JfXcNdmnWLrWKAf6gbAMcct6ID_sygMM63wGmjok1xBhR3-bscaoWU80zfFGd1mMLMedl8rnZC9OVWYRmNBYF-UCWuLIfKXx_SiQch48lMkdWYPrCiBLZChQrS6tEJhcttisW3JUkvl4T4NMAu9HuRROeQsSaeMgXE2UZi4O2F3bXamlOq-0_u_VwsAvEdxb1y70RK2InCEfdFL5x7qdU25H2Bhok8o0NxEEebXSE1MTFevt8yWgn3E892s_YpQrb9m8Mf9QZvLamFSldW_7qliktmmTyF6EgP2hETZi32rwNvuY65lqk2QWbjv2yCMJQ7FHgHu8dq2IO_t16g3MIfo=w608-h912-s-no?authuser=0"
           />
         </div>
         <div className="flex flex-row gap-5 justify-center m-5 lg:mt-10 lg:ml-32 lg:justify-center">
