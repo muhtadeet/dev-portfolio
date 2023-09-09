@@ -44,7 +44,7 @@ export default function App() {
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
         />
-      <NavbarMenu>
+      <NavbarMenu className="max-w-sm">
           <NavbarMenuItem>
             <Link
               className="cursor-pointer transition ease-in-out duration-300 hover:text-light-blue-600 text-blue-gray-800 w-full font-ubuntu font-semibold"
