@@ -8,7 +8,7 @@ export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
-    <Navbar shouldHideOnScroll isBordered onMenuOpenChange={setIsMenuOpen}>
+    <Navbar isBordered onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
         <NavbarBrand>
           <Logo/>
@@ -17,7 +17,7 @@ export default function App() {
         <div className="pr-5 font-ubuntu font-semibold">
       <NavbarContent className="hidden sm:flex gap-10">
         <NavbarItem>
-          <Link className=" cursor-pointer transition ease-in-out duration-300 hover:text-light-blue-600" color="foreground" onClick={() => scroll.scrollToTop()} smooth={true} duration={700}>
+          <Link to="" className=" cursor-pointer transition ease-in-out duration-300 hover:text-light-blue-600" color="foreground" onClick={() => scroll.scrollToTop()} smooth={true} duration={700}>
             Home
           </Link>
         </NavbarItem>

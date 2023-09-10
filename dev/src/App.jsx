@@ -8,7 +8,7 @@ import FooterComp from './components/FooterComp'
 export default function App() {
   return (
     <>
-    <Navbarmenu/>
+      <Navbarmenu/>
       <Home/>
       <About/>
       <Projects/>
