@@ -1,7 +1,7 @@
 import { Link } from "@nextui-org/react";
 import { Avatar } from "@material-tailwind/react";
 import Taron from "./photos/taron.jpg";
-// import Fade from "react-reveal";
+import { Fade } from 'react-awesome-reveal';
 
 export default function Home() {
   return (
@@ -10,36 +10,36 @@ export default function Home() {
         id="home"
         className="flex flex-col lg:grid lg:grid-cols-2 mt-14 sm:mt-24 md:mt-12 justify-center m-5"
       >
-        {/* <Fade right> */}
           <div className="lg:hidden flex lg:justify-end justify-center lg:mr-96 lg:pr-20 lg:mt-10 ">
+          <Fade direction="right">
             <img
               className="border-solid border-blue-gray-800 border-3 rounded-[50%] w-[180px] h-[250px]"
               src={Taron}
             />
+            </Fade>
           </div>
-        {/* </Fade> */}
         <div className="lg:mt-24">
-          {/* <Fade left> */}
+          <Fade direction="left">
             <p className="font-lato font-bold flex justify-center lg:justify-center lg:ml-96 lg:pl-24 lg:mr-5 text-3xl lg:text-7xl ml-5 mt-10 text-blue-gray-800">
               Front-End Developer - React.js 👋🏼
             </p>
-          {/* </Fade> */}
-          {/* <Fade left> */}
+          </Fade>
+          <Fade direction="left">
             <p className="font-lato flex justify-center lg:justify-center lg:ml-96 lg:pl-24 text-md lg:text-2xl text-blue-gray-700 m-5">
               Hey there! I&apos;m Muhtadee Taron,&nbsp;a passionate Front-End
               Developer based in Dhaka, Bangladesh. 📍
             </p>
-          {/* </Fade> */}
+          </Fade>
         </div>
-        {/* <Fade right> */}
+        <Fade direction="right">
           <div className="hidden lg:flex lg:justify-end justify-center lg:mr-96 lg:pr-20 lg:mt-24 ">
             <img
               className="border-solid border-blue-gray-800 border-3 rounded-[50%] w-[280px] h-[400px]"
               src={Taron}
             />
           </div>
-        {/* </Fade> */}
-        {/* <Fade left> */}
+        </Fade>
+        <Fade direction="left">
           <div className="flex flex-row gap-5 justify-center m-5 lg:mt-10 lg:ml-32 lg:justify-center">
             <Link href="https://www.linkedin.com/in/muhtadee-taron-b4253628b/">
               <svg
@@ -78,9 +78,9 @@ export default function Home() {
               </svg>
             </Link>
           </div>
-        {/* </Fade> */}
+        </Fade>
       </div>
-      {/* <Fade bottom> */}
+      <Fade direction="bottom">
         <div className="flex justify-center md:justify-center m-5 mt-20 gap-4 md:gap-10">
           <Avatar
             size="md"
@@ -113,7 +113,7 @@ export default function Home() {
             className="shadow-xl transition duration-1000 ease-in-out hover:-translate-y-5 p-2 shadow-black-900/20 border bg-white border-blue-gray-50"
           />
         </div>
-      {/* </Fade> */}
+      </Fade>
     </>
   );
 }
