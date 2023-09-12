@@ -1,16 +1,24 @@
 import { Card, CardBody, Image, Link } from "@nextui-org/react";
 import Port from './photos/portf.png'
 import Ecom from './photos/e-com.png'
+import Fade from 'react-reveal'
 
 export default function Projects() {
   return (
-    <div id="projects" className="m-5 mt-28">
+    <>
+    <div id="projects" className="m-5"></div>
+    <div className="m-5 mt-28">
+      <Fade bottom>
       <h3 className="font-medium flex justify-center md:justify-center text-xl font-lato text-light-blue-600">
         Projects
       </h3>
+      </Fade>
+      <Fade bottom>
       <p className="text-3xl flex justify-center md:justify-center font-bold font-ubuntu text-foreground/80 mt-3">
         Created with utmost dedication and made responsive ✨
       </p>
+      </Fade>
+      <Fade left>
       <div className="flex flex-row justify-center mt-20 mb-10">
         <Card
           className="border-none bg-background/60 dark:bg-default-100/50 mx-5 max-w-4xl"
@@ -18,7 +26,7 @@ export default function Projects() {
         >
           <CardBody className="flex lg:flex-col justify-center">
             <div className="grid grid-cols-6 md:grid-cols-4 lg:grid-cols-12 gap-6 md:gap-4 items-center justify-center">
-              <div className="relative lg:w-unit-7xl col-span-6 lg:mr-2 md:-mr-8 lg:col-span-4">
+              <div className="relative hover:transition hover:duration-300 hover:ease-in-out hover:rotate-6 lg:w-unit-7xl col-span-6 lg:mr-2 md:-mr-8 lg:col-span-4">
                 <Link
                   className="flex justify-center"
                   href="https://muhtadee.pages.dev/"
@@ -70,14 +78,16 @@ export default function Projects() {
           </CardBody>
         </Card>
       </div>
+      </Fade>
+      <Fade right>
       <div className="flex flex-row justify-center mt-40 mb-10">
         <Card
           className="border-none bg-background/60 dark:bg-default-100/50 mx-5 max-w-4xl"
           shadow="sm"
         >
           <CardBody className="flex lg:flex-col justify-center">
-            <div className="grid grid-cols-6 md:grid-cols-4 lg:grid-cols-12 gap-6 md:gap-4 items-center justify-center">
-              <div className="relative lg:w-unit-7xl col-span-6 lg:col-span-4">
+            <div className="grid grid-cols-6 md:grid-cols-4 lg:grid-cols-12 gap-6 md:gap-4 items-center justify-center sm:-mr-5 sm:ml-2 md:mr-0 md:ml-0">
+              <div className="relative hover:transition hover:duration-300 hover:ease-in-out hover:-rotate-6 lg:w-unit-7xl col-span-6 lg:col-span-4">
                 <Link
                   className="flex justify-center"
                   href="https://e-commerce-app-d0j.pages.dev/"
@@ -129,6 +139,8 @@ export default function Projects() {
           </CardBody>
         </Card>
       </div>
+      </Fade>
     </div>
+    </>
   );
 }
