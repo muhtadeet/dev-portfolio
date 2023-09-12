@@ -1,24 +1,24 @@
 import { Card, CardBody, Image, Link } from "@nextui-org/react";
 import Port from './photos/portf.png'
 import Ecom from './photos/e-com.png'
-import Fade from 'react-reveal'
+// import Fade from 'react-reveal'
 
 export default function Projects() {
   return (
     <>
     <div id="projects" className="m-5"></div>
     <div className="m-5 mt-28">
-      <Fade bottom>
+      {/* <Fade bottom> */}
       <h3 className="font-medium flex justify-center md:justify-center text-xl font-lato text-light-blue-600">
         Projects
       </h3>
-      </Fade>
-      <Fade bottom>
+      {/* </Fade> */}
+      {/* <Fade bottom> */}
       <p className="text-3xl flex justify-center md:justify-center font-bold font-ubuntu text-foreground/80 mt-3">
         Created with utmost dedication and made responsive ✨
       </p>
-      </Fade>
-      <Fade left>
+      {/* </Fade> */}
+      {/* <Fade left> */}
       <div className="flex flex-row justify-center mt-20 mb-10">
         <Card
           className="border-none bg-background/60 dark:bg-default-100/50 mx-5 max-w-4xl"
@@ -78,8 +78,8 @@ export default function Projects() {
           </CardBody>
         </Card>
       </div>
-      </Fade>
-      <Fade right>
+      {/* </Fade> */}
+      {/* <Fade right> */}
       <div className="flex flex-row justify-center mt-40 mb-10">
         <Card
           className="border-none bg-background/60 dark:bg-default-100/50 mx-5 max-w-4xl"
@@ -139,7 +139,7 @@ export default function Projects() {
           </CardBody>
         </Card>
       </div>
-      </Fade>
+      {/* </Fade> */}
     </div>
     </>
   );

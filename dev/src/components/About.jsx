@@ -1,6 +1,6 @@
 import { Card, CardBody, Image } from "@nextui-org/react";
 import PC from './photos/pc.jpg'
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 
 export default function About() {
   return (
@@ -9,7 +9,7 @@ export default function About() {
 
     </div>
       <div className="flex flex-row justify-center mt-40 md:mt-72 mb-10 lg:h-[90vh]">
-        <Fade left>
+        {/* <Fade left> */}
         <Card
           className="border-none bg-background/60 dark:bg-default-100/50 mx-5 max-w-7xl"
           shadow="sm"
@@ -55,7 +55,7 @@ export default function About() {
             </div>
           </CardBody>
         </Card>
-        </Fade>
+        {/* </Fade> */}
       </div>
     </>
   );
